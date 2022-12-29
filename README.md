@@ -2,7 +2,7 @@
 
 This is my Sample React like app in JavaScript.
 
-If you ever wondered and thought that can you even make a UI by just using backend servers?
+If you ever wondered and thought that can you even make a UI or a react like app by just using backend servers?
 
 Yes, it is a big yes but some only used these for performance and testing.
 
