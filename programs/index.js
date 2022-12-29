@@ -1,24 +1,9 @@
 const express = require('express');
 const app = express();
 
-
 app.get('/', (req, res) => {
  
-  const html = render(
-    <div>
-      <h1>Hello, World!</h1>
-    </div>
-  );
-  res.send(html);
-});
-
-app.listen(3000, () => {
-  console.log('Server listening on port 3000');
-});
-
-
-function render(component) {
-  return `
+  const html = `
     <!DOCTYPE html>
     <html>
       <head>
@@ -26,8 +11,15 @@ function render(component) {
         <title>Hello, World!</title>
       </head>
       <body>
-        ${component}
+        <div>
+          <h1>Hello, World!</h1>
+        </div>
       </body>
     </html>
   `;
-}
+  res.send(html);
+});
+
+app.listen(3000, () => {
+  console.log('Server listening on port 3000');
+});
